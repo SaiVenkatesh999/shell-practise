@@ -5,6 +5,7 @@ USERID=$(id -u)
  if [ $USERID -ne 0 ]; then 
     echo -e "$R ERROR :: please run this with root user"
     echo "usage: sudo bash $0"
+    echo "enter sudo su to get root access"
     exit 1
     fi
 
