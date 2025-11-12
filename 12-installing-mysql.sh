@@ -1,9 +1,10 @@
 #!/bin/bash
 R="\e[31m"
+N="\e[0m"
 USERID=$(id -u)
 
  if [ $USERID -ne 0 ]; then 
-    echo -e "$R ERROR :: please run this with root user"
+    echo -e "$R ERROR :: please run this with root user $N"
     echo "usage: sudo bash $0"
     echo "enter sudo su to get root access"
     exit 1
