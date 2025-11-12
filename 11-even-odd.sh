@@ -2,7 +2,7 @@
 echo "Please enter a number:"
 read -r NUMBER
 if [ $((NUMBER % 2)) -eq 0 ] ; then
-    echo "given $NUMBER is even"
+    echo "given number $NUMBER is even"
     else
-    echo "Given $NUMBER is odd"
+    echo "Given number $NUMBER is odd"
     fi
