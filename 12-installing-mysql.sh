@@ -1,5 +1,5 @@
 #!/bin/bash
-red=\033[0m
+red=$(\033[0m)
 USERID=$(id -u)
 
  if [ $USERID -ne 0 ]; then 
