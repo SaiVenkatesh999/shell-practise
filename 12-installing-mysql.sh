@@ -1,9 +1,9 @@
 #!/bin/bash
-red=$(\033[0m)
+R="\e[31m"
 USERID=$(id -u)
 
  if [ $USERID -ne 0 ]; then 
-    echo "$red ERROR :: please run this with root user"
+    echo -e "$R ERROR :: please run this with root user"
     exit 1
     fi
 
